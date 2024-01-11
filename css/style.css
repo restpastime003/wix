@@ -1,0 +1,368 @@
+
+:root{
+    --color-white: #FFFFFF;
+    --color-blue: #2894FF;
+    --color-blue2: 	#4A4AFF;
+    --color-primary: rgb(244,236,230);
+    --color-primary2: rgb(230,218,206);
+    --color-black: #000000;
+}
+*{
+    /* outline: 1px solid red; */
+    position: relative;
+    box-sizing: border-box;
+}
+body{
+    font-size: 17px;
+}
+a{
+    text-decoration: none;
+    color: var(--color-black);
+}
+i{
+    cursor: pointer;
+}
+.announcement{
+    background-color: var(--color-white);
+    box-shadow: 0 2px 18px 0 rgba(129,162,182,.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 999;
+}
+.announcement img{
+    cursor: pointer;
+}
+.logo{
+    width: 60px;
+}
+.pc_phone_div{
+    display: flex;
+}
+.pc_phone_div hr{
+    margin: 0 20px;
+}
+.pc_img{
+    width: 30px;
+}
+.phone_img{
+    width: 20px;
+}
+.edit_web{
+    display: flex;
+    align-items: center;
+}
+.edit_web p,
+.edit_web a{
+    margin: 0 20px;
+}
+.edit_web_btn{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+.edit_web_btn:hover{
+    opacity: 0.8;
+}
+
+header{
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+}
+header h1{
+    display: flex;
+    align-items: center;
+}
+header h1 span{
+    width: 15px;
+    height: 15px;
+    background-color: var(--color-blue2);
+    display: block;    
+    margin: auto;
+}
+header h1 a{
+    margin: 0 10px;
+}
+.header_name{
+    font-size: 25px;
+}
+header nav a{
+    margin: 0 10px;
+}
+header nav a:hover{
+    color: var(--color-blue);
+}
+.fa-bars{
+    display: none;
+    font-size: 30px;
+}
+
+.about_me_block{
+    display: flex;
+    min-height: 80vh;
+    justify-content: center;
+}
+.about_me_block::before{
+    content: "";
+    background-color: var(--color-primary2);
+    width: 700px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.about_me_name,
+.about_me_content{
+    margin: auto 0;
+    max-height: 500px;
+    height: 100%;
+}
+.about_me_name{
+    background-color: var(--color-primary);
+    box-shadow: -11.31px 11.31px 17px 0px rgba(138,131,124,0.23),0 1px 4px rgba(0,0,0,.6);
+    max-width: 350px;
+    width: 100%;
+    padding: 50px 0;
+}
+.about_me_name img{
+    border-radius: 100%;
+}
+.about_me_name h1,
+.about_me_name h2{
+    text-align: center;
+}
+.about_me_name h1{
+    word-wrap:break-word;
+    width: 100px;
+    font-size: 25px;
+    margin: 30px auto;
+}
+.about_me_name h2{
+    font-size: 20px;
+    margin: 30px auto;
+}
+.about_me_name img{
+    display: block;
+    margin: 0 auto;
+}
+.about_me_name ul{
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0;
+}
+.about_me_name ul li{
+    margin: 0 10px;
+}
+.about_me_name i{
+    font-size: 20px;
+}
+
+.about_me_content{
+    max-width: 450px;
+    width: 100%;
+    padding: 50px 30px;
+}
+.about_me_content h1{
+    font-size: 80px;
+}
+.about_me_content h2{
+    font-size: 25px;
+    margin: 30px auto;
+}
+.about_me_content div{
+    display: flex;
+    margin-bottom: 50px;
+}
+.about_me_content a{
+    font-size: 14px;
+    padding: 10px 35px;
+    border-radius: 50px;
+    border: var(--color-blue) solid 2px;
+    margin-right: 20px;
+}
+.about_me_content_RESUME_btn{
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+.about_me_content_RESUME_btn:hover{
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+.about_me_content_PROJECTS_btn{
+    background-color: var(--color-white);
+}
+.about_me_content_PROJECTS_btn:hover{
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+.about_me_content p{
+    line-height: 1.5;
+    margin-top: 30px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 30px;
+    font-size: 13px;
+}
+footer div{
+    margin: auto 0;
+}
+.footer_Ltd{
+    line-height: 1.5;
+}
+.contact_information{
+    display: flex;
+    text-align: center;
+}
+.contact_information div{
+    margin: 0 20px;
+}
+.contact_information h6{
+    margin-bottom: 15px;
+}
+.contact_information ul{
+    display: flex;
+}
+.contact_information ul i{
+    margin: 0 10px;
+}
+
+
+
+/* ipad */
+@media screen and (max-width: 768px) and (min-width: 376px){
+    .announcement{
+        display: none;
+    }
+    header{
+        display: flex;
+        margin: 0 auto;
+        padding: 30px 10px;
+    }
+    header nav {
+        display: none;
+    }
+    header h1 span{
+        margin: 0 0 0 10px;
+    }
+    header h1{
+        width: 100%;
+    }
+    header .fa-bars{
+        display: block;
+    }
+    .about_me_block{
+        display: block;
+    }
+    .about_me_block::before{
+        width: 100%;
+    }
+    .about_me_name{
+        margin: 0 auto;
+    }
+    .about_me_content{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .about_me_content a{
+        margin: 0 auto;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+    .footer_Ltd_block{
+        margin-top: 20px;
+        margin-left: 20px;
+        order: 2;
+    }
+    .contact_information{
+        flex-wrap: wrap;
+        text-align: left;
+    }
+    .contact_information div{
+        padding: 10px;
+    }
+    .contact_information li{
+        margin-left: -10px;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 375px) {
+    .announcement{
+        display: none;
+    }
+    header{
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+    header nav {
+        display: none;
+    }
+    header h1 span{
+        margin: 0 0 0 10px;
+    }
+    header h1{
+        width: 100%;
+    }
+    .header_name,
+    header h1 a{
+        font-size: 13px;
+    }
+    header .fa-bars{
+        display: block;
+        margin-right: 10px;
+    }
+    .about_me_block{
+        display: block;
+    }
+    .about_me_block::before{
+        width: 100%;
+    }
+    .about_me_name{
+        margin: 0 auto;
+    }
+    .about_me_content{
+        margin: 0 auto;
+        text-align: left;
+    }
+    .about_me_content a{
+        margin: 0 auto;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+    .footer_Ltd_block{
+        margin-top: 20px;
+        margin-left: 30px;
+        order: 2;
+    }
+    .contact_information{
+        flex-wrap: wrap;
+        text-align: left;
+    }
+    .contact_information div{
+        padding: 10px;
+    }
+    .contact_information li{
+        margin-left: -10px;
+    }
+}
+
+
+
+
