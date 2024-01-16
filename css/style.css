@@ -8,7 +8,7 @@
     --color-black: #000000;
 }
 *{
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
     position: relative;
     box-sizing: border-box;
 }
@@ -81,12 +81,12 @@ header h1{
     display: flex;
     align-items: center;
 }
-header h1 span{
+.blue_square{
     width: 15px;
     height: 15px;
     background-color: var(--color-blue2);
     display: block;    
-    margin: auto;
+    margin: auto 10px auto 0;
 }
 header h1 a{
     margin: 0 10px;
@@ -105,6 +105,7 @@ header nav a:hover{
     font-size: 30px;
 }
 
+/* =========== 關於我 =========== */
 .about_me_block{
     display: flex;
     min-height: 80vh;
@@ -212,11 +213,170 @@ header nav a:hover{
     margin-top: 30px;
 }
 
+/* =========== 簡歷 =========== */
+.resume_block{
+    width: 100%;
+    background-color: var(--color-primary2);
+    padding: 100px 30px;
+}
+.center_block{
+    justify-content: center;
+}
+.center_block h1{
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.resume_block .center_block,
+.Experience_block,
+.Education_block
+{
+    display: flex;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.Experience_block{
+    justify-content: space-between;
+}
+.Experience_block h2,
+.Education_block h2,
+.skill_Language_card h2{
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 20px;
+}
+.Experience_block a{
+    background-color: var(--color-blue2);
+    color: var(--color-white);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin: auto 30px auto 0;
+}
+.Experience_card,
+.Education_card{
+    display: flex;
+    background-color: var(--color-white);
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+.resume_block .card_title{
+    max-width: 400px;
+    width: 100%;
+    padding: 100px 30px;
+}
+.resume_block .card_title h3,
+.resume_block .card_title h4,
+.resume_block .card_title h5{
+    margin: 20px 0;
+}
+
+.card_contact{
+    padding: 0 30px;
+    margin: auto;
+}
+.card_contact p{
+    margin: 30px 0;
+    line-height: 1.5;
+}
+.skill_Language_card{
+    background-color: var(--color-white);
+    max-width: 700px;
+    width: 100%;
+    margin: 100px auto 0 auto;
+}
+.skill_Language_card .skill,
+.skill_Language_card .language{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skill_Language_card .skill p,
+.skill_Language_card .language p{
+    display: flex;
+    margin: 20px;
+    width: 230px;
+}
+
+/* =========== 專案 =========== */
+.project_block{
+    background-color: var(--color-primary2);
+ 
+    padding: 100px 0;
+}
+.project_title,
+.project_contact,
+.project_card
+{
+    max-width: 700px;
+    width: 100%;
+}
+.project_title{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 0 auto;
+}
+.project_contact{
+    text-align: center;
+    padding: 20px 30px;
+    margin: 0 auto;
+}
+.project_card{
+    display: flex;
+    margin: 100px auto;
+    background-color: var(--color-white);
+}
+.project_block .card_title{
+    border-left: 10px solid var(--color-blue2);
+    padding: 10px 30px;
+}
+.project_block .card_title h1,
+.project_block .card_title h2{
+    margin: 10px 0;
+}
+.project_block .card_title h1{
+    font-size: 25px;
+    font-weight: bolder;
+    color: var(--color-blue2);
+}
+.card_left{
+    margin: auto 0;
+}
+.card_left p{
+    padding: 50px 30px;
+}
+
+/* =========== 聯繫 =========== */
+.contact_block{
+    background-color: var(--color-primary2);
+}
+.talk_title{
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+.talk_title{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+/* =========== footer =========== */
 footer{
     display: flex;
     justify-content: space-between;
     padding: 50px 30px;
     font-size: 13px;
+    background-color: var(--color-white);
 }
 footer div{
     margin: auto 0;
