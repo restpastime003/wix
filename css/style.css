@@ -351,11 +351,14 @@ header nav a:hover{
 /* =========== 聯繫 =========== */
 .contact_block{
     background-color: var(--color-primary2);
+    padding: 100px 0;
 }
-.talk_title{
+.talk_title,
+.contact_block form{
     max-width: 700px;
     width: 100%;
     margin: 0 auto;
+    padding: 30px;
 }
 .talk_title{
     display: flex;
@@ -363,10 +366,43 @@ header nav a:hover{
     font-size: 30px;
     font-weight: bolder;
 }
-
-
-
-
+.first_Last{
+    display: flex;
+    justify-content: space-between;
+}
+.first_Last label{
+    width: 45%;
+}
+.contact_block form{
+    background-color: var(--color-white);
+}
+#contact_first_name,
+#contact_Last_name,
+#contact_email,
+#contact_subject,
+#contact_message
+{
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    border: none;
+    border-bottom: var(--color-black) solid 2px;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+.contact_block form button{
+    padding: 8px 30px;
+    border-radius: 30px;
+    border: 3px solid var(--color-blue2);
+    font-weight: bolder;
+    background-color: var(--color-blue2);
+    color: var(--color-white);
+    cursor: pointer;
+}
+.contact_block form button:hover{
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
 
 
 
