@@ -71,14 +71,14 @@ i{
     opacity: 0.8;
 }
 
-header{
-    margin-top: 75px;
+.header{
+    /* margin-top: 75px; */
     display: flex;
     justify-content: space-between;
     padding: 50px;
     align-items: center;
 }
-header h1{
+.header h1{
     display: flex;
     align-items: center;
 }
@@ -89,16 +89,16 @@ header h1{
     display: block;    
     margin: auto 10px auto 0;
 }
-header h1 a{
+..header h1 a{
     margin: 0 10px;
 }
-.header_name{
+..header_name{
     font-size: 25px;
 }
-header nav a{
+..header nav a{
     margin: 0 10px;
 }
-header nav a:hover{
+..header nav a:hover{
     color: var(--color-blue);
 }
 .fa-bars{
@@ -445,21 +445,21 @@ footer div{
     .announcement{
         display: none;
     }
-    header{
+    .header{
         display: flex;
         margin: 0 auto;
         padding: 30px 10px;
     }
-    header nav {
+    .header nav {
         display: none;
     }
-    header h1 span{
+    .header h1 span{
         margin: 0 0 0 10px;
     }
-    header h1{
+    .header h1{
         width: 100%;
     }
-    header .fa-bars{
+    .header .fa-bars{
         display: block;
     }
     .about_me_block{
@@ -503,24 +503,24 @@ footer div{
     .announcement{
         display: none;
     }
-    header{
+    .header{
         margin: 0 auto;
         padding: 30px 0;
     }
-    header nav {
+    .header nav {
         display: none;
     }
-    header h1 span{
+    .header h1 span{
         margin: 0 0 0 10px;
     }
-    header h1{
+    .header h1{
         width: 100%;
     }
     .header_name,
-    header h1 a{
+    .header h1 a{
         font-size: 13px;
     }
-    header .fa-bars{
+    .header .fa-bars{
         display: block;
         margin-right: 10px;
     }
